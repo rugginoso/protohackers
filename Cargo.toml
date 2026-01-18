@@ -5,6 +5,12 @@ edition = "2024"
 
 [dependencies]
 tokio = { version = "1.47.2", features = ["full"] }
+tokio-util = { version = "0.7.17", features = ["full"] }
 anyhow = "1"
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+tower = { version = "0.5.2", features = ["util"] }
+thiserror = "2.0.17"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+futures = "0.3.31"
